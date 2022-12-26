@@ -1,0 +1,51 @@
+local data = {}
+
+data.modes = {
+   n      = {'Normal', 'N', 'NormalMode'},
+   no     = {'N-Pending', '?', 'OpPending' },
+   v      = {'Visual', 'V', 'VisualMode'},
+   V      = {'V-Line', 'Vl', 'VisualLineMode'},
+   [''] = {'V-Block', 'Vb' },
+   s      = {'Select', 'S' },
+   S      = {'S-Line', 'Sl' },
+   [''] = {'S-Block', 'Sb' },
+   i      = {'Insert', 'I', 'InsertMode'},
+   ic     = {'I-Completion', 'Ic', 'ComplMode'},
+   R      = {'Replace', 'R', 'ReplaceMode'},
+   Rv     = {'V-Replace', 'Rv' },
+   c      = {'Command', 'C', 'CommandMode'},
+   cv     = {'Command-Vim', 'E' },
+   ce     = {'Command-Ex', 'E' },
+   r      = {'Prompt', 'P' },
+   rm     = {'More'  , 'M' },
+   ['r?'] = {'Confirm', 'Cn'},
+   ['!']  = {'Shell' , 'S' },
+   t      = {'Terminal', 'T', 'TerminalMode'},
+   nt     = {'N-Terminal', 'Nt' },
+}
+
+data.mode_highlights = {
+  n      = 'St_NormalMode',
+  no     = 'St_NormalMode',
+  v      = 'St_VisualMode',
+  V      = 'St_VisualMode',
+  [''] = 'St_VisualMode',
+  s      = 'St_SelectMode',
+  S      = 'St_SelectMode',
+  [''] = 'St_SelectMode',
+  i      = 'St_InsertMode',
+  ic     = 'St_InsertMode',
+  R      = 'St_ReplaceMode',
+  Rv     = 'St_ReplaceMode',
+  c      = 'St_CommandMode',
+  cv     = 'St_CommandMode',
+  ce     = 'St_CommandMode',
+  r      = 'St_ConfirmMode',
+  rm     = 'St_ConfirmMode',
+  ['r?'] = 'St_ConfirmMode',
+  ['!']  = 'St_TerminalMode',
+  t      = 'St_TerminalMode',
+  nt     = 'St_NTerminalMode',
+}
+
+return data
