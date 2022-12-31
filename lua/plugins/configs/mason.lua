@@ -11,9 +11,9 @@ local options = {
 
   ui = {
     icons = {
-      package_pending = "*",
-      package_installed = "+",
-      package_uninstalled = "-",
+      package_pending = " ",
+      package_installed = " ",
+      package_uninstalled = " ",
     },
 
     keymaps = {

@@ -157,11 +157,11 @@ M.packer_init = function()
     compile_on_sync = true,
     git = { clone_timeout = 6000 },
     display = {
-      working_sym = "+",
-      error_sym = "⨯",
-      done_sym = "-",
-      removed_sym = "-",
-      moved_sym = ">",
+      working_sym = " ",
+      error_sym = " ",
+      done_sym = " ",
+      removed_sym = " ",
+      moved_sym = " ",
       prompt_border = "none",
       open_fn = function()
         return require("packer.util").float { border = "none" }

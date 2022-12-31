@@ -35,6 +35,13 @@ local plugins = {
     end,
   },
 
+  ["IamRosmel/nvim-web-devicons"] = {
+    module = "nvim-web-devicons",
+    -- config = function()
+    --   require("plugins.configs.others").devicons()
+    -- end,
+  },
+
   -- ["lukas-reineke/indent-blankline.nvim"] = {
   --   opt = true,
   --   setup = function()
@@ -152,6 +159,8 @@ local plugins = {
   ["hrsh7th/cmp-nvim-lsp"] = { after = "cmp-nvim-lua" },
   ["hrsh7th/cmp-buffer"] = { after = "cmp-nvim-lsp" },
   ["hrsh7th/cmp-path"] = { after = "cmp-buffer" },
+
+  -- LSP signature
   ["hrsh7th/cmp-nvim-lsp-signature-help"] = {},
 
   -- misc plugins

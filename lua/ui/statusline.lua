@@ -26,6 +26,15 @@ local generator = function()
     )
   )
   table.insert(segments, sections.split)
+  table.insert(segments,
+    subscribe.buf_autocmd(
+      "st_file_icon",
+      "BufRead",
+      function(_, buffer)
+        return extensions.file_icon(_,buffer)
+      end
+    )
+  )
   table.insert(segments, builtin.file)
   table.insert(segments,
     sections.collapse_builtin {

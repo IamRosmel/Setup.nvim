@@ -54,7 +54,7 @@ local options = {
   },
   extensions = {
     file_browser = {
-      dir_icon = "",
+      dir_icon = " ",
       previewer = false,
       layout_config = {
         width = 0.50,
